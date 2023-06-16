@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Integer[] array = {2, 4, 6, 8};
-        String[] strArray = {"abc", "def", "ghi"};
+        Integer[] array = {2, 12, 22, 32};
+        String[] strArray = {"albert", "code", "oop"};
         Character[] charArray = {'a', 'b', 'c'};
 
-        System.out.println("Index of 6 in Integer array: " + GenericMethods.findIndex(array, 6));
-        System.out.println("Index of 'ghi' in String array: " + GenericMethods.findIndex(strArray, "ghi"));
-        System.out.println("Index of 'b' in Character array: " + GenericMethods.findIndex(charArray, 'b'));
+        System.out.println("22 is in index " + GenericMethods.findIndex(array, 22));
+        System.out.println("'oop' is in index " + GenericMethods.findIndex(strArray, "oop"));
+        System.out.println("'a' is in index " + GenericMethods.findIndex(charArray, 'a'));
 
-        IntegerValueOne obj1 = new IntegerValueOne(5);
-        IntegerValueTwo obj2 = new IntegerValueTwo(10);
+        IntegerValueOne obj1 = new IntegerValueOne(1000);
+        IntegerValueTwo obj2 = new IntegerValueTwo(999);
 
         IndexFinder result = GenericMethods.greaterThan(obj1, obj2);
-        System.out.println("Greater value is: " + result.returnValue());
+        System.out.println("The greater value is: " + result.returnValue());
     }
 }
